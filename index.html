@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Record System</title>
+</head>
+<body>
+    <h1>Health Record System</h1>
+
+    <h2>Add Record</h2>
+    <form id="addRecordForm">
+        <label for="patientName">Patient Name:</label>
+        <input type="text" id="patientName" required><br>
+
+        <label for="diagnosis">Diagnosis:</label>
+        <input type="text" id="diagnosis" required><br>
+
+        <label for="emergencyContact">Emergency Contact:</label>
+        <input type="text" id="emergencyContact" required><br>
+
+        <input type="submit" value="Add Record">
+    </form>
+
+    <h2>Update Diagnosis</h2>
+    <form id="updateDiagnosisForm">
+        <label for="recordIndex">Record Index:</label>
+        <input type="number" id="recordIndex" required><br>
+
+        <label for="newDiagnosis">New Diagnosis:</label>
+        <input type="text" id="newDiagnosis" required><br>
+
+        <input type="submit" value="Update Diagnosis">
+    </form>
+
+    <h2>Get All Records</h2>
+    <button id="getAllRecordsButton">Get All Records</button>
+
+    <div id="allRecords"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/web3@1.3.5/dist/web3.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
